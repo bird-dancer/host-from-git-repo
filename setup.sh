@@ -30,3 +30,4 @@ echo "
 git --work-tree=/var/www/$name/content --git-dir=/var/www/$name/$name.git checkout -f master
 " > /var/www/$name/$name.git/hooks/post-receive
 echo $(chmod +x /var/www/$name/$name.git/hooks/post-receive)
+echo $(systemctl restart nginx)
