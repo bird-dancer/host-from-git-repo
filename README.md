@@ -23,7 +23,7 @@ www<br>
         └── test.git<br>
             ├── hooks<br>
             │   ├── post-receive
+            
+(The repository name in this case is test)
 
 The nginx file inside of `sites-available` has `/var/www/test/content/html` as the root paramenter.
-
-test is a varaible.
