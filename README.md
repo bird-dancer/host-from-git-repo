@@ -1,4 +1,5 @@
 # host-from-git-repo
+![CI](https://github.com/f-eliks/host-from-git-repo/workflows/CI/badge.svg)
 Push your code in a git repo and it will be deployed inside of a nginx server block
 
 
