@@ -3,7 +3,7 @@ read -p 'What is the domain? ' domain
 read -p 'What is the websites name? ' name
 echo $(mkdir -p /var/www/$name/$name.git)
 echo $(git init --bare /var/www/$name/$name.git)
-echo $(mkdir -p /var/www/$name/content/html)
+echo $(mkdir -p /var/www/$name/content)
 #! add new user if wanted and change permissions
 read -p 'Who is the owner of this workflow? ' owner
 echo $(chown -R $owner /var/www/$name)
