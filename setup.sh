@@ -11,15 +11,15 @@ echo $(chown -R $owner /var/www/$name)
 echo $(rm /etc/nginx/sites-available/$name)
 echo $(touch /etc/nginx/sites-available/$name)
 echo "
-        server {
-        listen 80;
-        listen [::]:80;
-        root /var/www/$name/content/html;
-        index index.html index.htm index.php;
-        server_name $domain;
-        location / {"'
-                try_files $uri $uri/ =404;
-        }
+	server {
+	listen 80;
+	listen [::]:80;
+	root /var/www/$name/content/html;
+	index index.html index.htm index.php;
+	server_name $domain;
+location / {"'
+	try_files $uri $uri/ =404;
+	}
 }
 ' > /etc/nginx/sites-available/$name
 echo $(rm /etc/nginx/sites-enabled/$name)
